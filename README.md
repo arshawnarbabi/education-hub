@@ -4,13 +4,19 @@ A personal AI tutoring system built on Claude Code, shown here as two runnable p
 
 Author: Arshawn Arbabi. **I directed Claude Code agents to build this and did not hand-write the code.** My part was deciding what to build, setting the rules, using it, and sending back what was wrong.
 
-<!-- WHY: his own paragraph goes here -->
+The original vision for this Education Hub came during senior year of high school, where I wanted a way to integrate AI to keep track of all my assignments, tutor me, and accelerate my learning all while keeping track of my progress. But when I looked online, all the tools I found either had lots of manual work or didn't include all the features I wanted, and most of them were too expensive for me at the time anyway. This initial idea led me to build Cogni. I liked Cogni at first and I put emphasis on making sure it helped me think better rather than replacing my thinking, but I quickly realized that it wasn't dynamic enough for my learning, had lots of upkeep, and had no way to keep me on track, alongside having some fundamental problems that limited it from being something that I could really rely on and use daily to really benefit me. So I took the vision of Cogni and I evolved it into my full personal Education Hub. I kept what I liked about Cogni but made everything completely headless, so everything works through the Claude Code interface through the main Claude agent. Then I made learning and scheduling automatic: card reviews and practice problems happen right in the chat on a spaced repetition schedule, tutoring checks my work step by step, and deadlines turn into study blocks on my calendar with reminders on my phone. Each job became its own skill, like /education-system for tutoring, /process for filing anything I send it, /block for my calendar, /save for keeping records current, and /wire-in for making sure a new rule actually gets enforced. Next, I set up agents that run daily or as new files come in to gather all my data from Canvas, my school email, class recordings, handwritten notes, course readings, my homework site, and my clubs' Discord and Instagram to keep the system up to date and full of context. Lastly, I integrated all of this into a system that works automatically and for me. I've been using the Education Hub now for a few months and it's completely transformed my school experience in terms of productivity and staying on track. I regularly update and add new features, but if one feature disappeared right now, the one I'd miss the most is probably scheduling or the daily agents. Without scheduling, nothing due would have time set aside for it, and without the daily agents, I'd be back to checking Canvas, my email, and everything else myself.
+
+This repo is the part I can share: a cut-down version of the study engine and the reply checker, with made-up sample data. The full system stays private because it holds my personal data and is tied to my own classes.
 
 ```
 make demo    # sets up a local venv, installs one dependency, runs the tour. Needs Python 3.10+.
 make test    # 110 tests
 make prove   # removes each mechanism in turn and shows its test failing
 ```
+
+## Try it with Claude Code
+
+Paste this repo's link into [Claude Code](https://claude.com/claude-code). [`CLAUDE.md`](CLAUDE.md) tells it to run the demo, answer your questions from the code, and add a part to your own project only if you ask.
 
 ## What the demo shows
 
