@@ -1,0 +1,59 @@
+{
+  "_notice": "SAMPLE DATA. Made up by hand for the demo and tests. Not a real course or a real study record.",
+  "deck": "SAMPLE-101",
+  "course": "Sample Course 101: Intro to Linear Algebra (made up)",
+  "start": "2030-01-07T12:00:00",
+  "last_day": 22,
+  "cards": [
+    {"front": "What does a zero determinant say about a square matrix?", "back": "It is not invertible."},
+    {"front": "Definition of an eigenvector of A", "back": "A nonzero v with Av = lambda v for some scalar lambda."},
+    {"front": "Rank plus nullity of an m by n matrix equals what?", "back": "n, the number of columns."},
+    {"front": "When are two vectors orthogonal?", "back": "When their dot product is zero."}
+  ],
+  "problem_types": [
+    {
+      "section": "2.1",
+      "name": "solve a 3 by 3 system by row reduction",
+      "since": "2030-01-07",
+      "rungs": [
+        {"key": "unique", "label": "one solution", "base": true},
+        {"key": "free-variable", "label": "infinitely many, one free variable"},
+        {"key": "inconsistent", "label": "no solution, say why"},
+        {"key": "parameter", "label": "for which k does a solution exist"},
+        {"key": "word-problem", "label": "set up the system from a word problem"}
+      ]
+    },
+    {
+      "section": "3.2",
+      "name": "eigenvalues of a 2 by 2 matrix",
+      "since": "2030-01-14",
+      "rungs": [
+        {"key": "real-distinct", "label": "two real eigenvalues", "base": true},
+        {"key": "repeated", "label": "a repeated eigenvalue"},
+        {"key": "complex", "label": "complex eigenvalues"}
+      ]
+    },
+    {
+      "section": "4.1",
+      "name": "project a vector onto a line",
+      "since": "2030-01-27",
+      "rungs": []
+    }
+  ],
+  "history": [
+    {"day": 1, "kind": "review", "card": 0, "rating": 3, "confidence": 7, "correct": true},
+    {"day": 1, "kind": "review", "card": 1, "rating": 1, "confidence": 8, "correct": false},
+    {"day": 1, "kind": "review", "card": 2, "rating": 3, "confidence": 5, "correct": true},
+    {"day": 2, "kind": "review", "card": 1, "rating": 3, "confidence": 6, "correct": true},
+    {"day": 2, "kind": "attempt", "source": "quiz", "prompt": "Row reduce the sample system A", "correct": true, "delay": "1d", "confidence": 6, "topic": "row reduction", "ptype": "solve a 3 by 3 system by row reduction", "rung": "unique"},
+    {"day": 3, "kind": "attempt", "source": "checkpoint", "prompt": "Is this matrix in echelon form?", "correct": false, "delay": "same-session", "topic": "echelon form"},
+    {"day": 4, "kind": "attempt", "source": "unassisted-week1", "prompt": "Find the rank of the sample matrix B", "correct": false, "delay": "2d", "confidence": 9, "topic": "rank"},
+    {"day": 4, "kind": "review", "card": 3, "rating": 3, "confidence": 9, "correct": true},
+    {"day": 8, "kind": "attempt", "source": "cold-solo", "prompt": "Eigenvalues of the sample matrix C", "correct": true, "delay": "1d", "confidence": 7, "topic": "eigenvalues", "ptype": "eigenvalues of a 2 by 2 matrix", "rung": "real-distinct"},
+    {"day": 9, "kind": "attempt", "source": "cold-solo", "prompt": "Solve the sample system with a free variable", "correct": false, "delay": "7d", "confidence": 8, "topic": "row reduction", "ptype": "solve a 3 by 3 system by row reduction", "rung": "free-variable"},
+    {"day": 10, "kind": "attempt", "source": "cold-solo", "prompt": "Row reduce the sample system D", "correct": true, "delay": "1d", "confidence": 5, "topic": "row reduction", "ptype": "solve a 3 by 3 system by row reduction", "rung": "unique"},
+    {"day": 11, "kind": "attempt", "source": "unassisted-week2", "prompt": "Find the rank of the sample matrix E", "correct": true, "delay": "3d", "confidence": 6, "topic": "rank"},
+    {"day": 16, "kind": "attempt", "source": "cold-solo", "prompt": "Solve the sample system with a free variable, again", "correct": true, "delay": "7d", "confidence": 7, "topic": "row reduction", "ptype": "solve a 3 by 3 system by row reduction", "rung": "free-variable"},
+    {"day": 17, "kind": "attempt", "source": "cold-solo", "prompt": "A repeated eigenvalue example", "correct": false, "delay": "9d", "confidence": 8, "topic": "eigenvalues", "ptype": "eigenvalues of a 2 by 2 matrix", "rung": "repeated"}
+  ]
+}
